@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <scroll-nav></scroll-nav>
+<!--    <mint-scroll></mint-scroll>-->
+<!--    <swiper-test></swiper-test>-->
+<!--    <better-scroll-test></better-scroll-test>-->
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ScrollNav from './components/ScrollNav.vue'
+// import BetterScrollTest from './components/BetterScrollTest.vue'
+import MintScroll from './components/MintScroll.vue'
+// import SwiperTest from './components/SwiperTest.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ScrollNav,
+    MintScroll,
+    // SwiperTest,
+    // BetterScrollTest
   }
 }
 </script>
@@ -23,6 +33,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 </style>
